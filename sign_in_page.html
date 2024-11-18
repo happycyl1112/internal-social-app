@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Social Network</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Startup Connect</h1>
+        <nav>
+            <button id="login-btn">Login</button>
+            <button id="signup-btn">Sign Up</button>
+            <button id="logout-btn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section id="signup-section" class="hidden">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" placeholder="Name" id="signup-name" required>
+                <input type="email" placeholder="Email" id="signup-email" required>
+                <input type="password" placeholder="Password" id="signup-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+        <section id="login-section" class="hidden">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" id="login-email" required>
+                <input type="password" placeholder="Password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="profile-section" class="hidden">
+            <h2>Your Profile</h2>
+            <div id="profile-info">
+                <img id="profile-thumbnail" src="default-avatar.png" alt="Profile Thumbnail">
+                <p id="profile-name"></p>
+                <p id="profile-email"></p>
+                <button id="upload-photo-btn">Upload Photo</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
